@@ -1,5 +1,5 @@
 {% set name = "SimSIMD" %}
-{% set version = "6.4.4" %}
+{% set version = "6.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ashvardanian/SimSIMD/archive/v{{ version }}.tar.gz
-  sha256: ad8155350b63a6548a3cc1b95b75b6db37aff0c9c5e496c03310ee674ef3516c
+  sha256: 65fa1fa065c96dc071eeccd09195b9500a360c57da5fb2d1f5ab479e0bb3e867
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
