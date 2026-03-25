@@ -10,7 +10,7 @@ source:
   sha256: 3a2adbc721581f2b434b8c66d68b4b0dfbed8660cd744349014f3bbd2e9c82f5
 
 build:
-  number: 1
+  number: 2
 
 outputs:
   - name: numkong
