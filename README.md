@@ -1,9 +1,9 @@
-About simsimd-feedstock
-=======================
+About numkong-with-alias-feedstock
+==================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/simsimd-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/ashvardanian/SimSIMD
+Home: https://github.com/ashvardanian/NumKong
 
 Package license: Apache-2.0
 
@@ -55,13 +55,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24599&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/simsimd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24599&branchName=main">
@@ -87,13 +80,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24599&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/simsimd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.13.____cp313" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24599&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/simsimd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -124,13 +110,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/simsimd-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.13.____cp313" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>win_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24599&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/simsimd-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -144,53 +123,54 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-numkong-green.svg)](https://anaconda.org/conda-forge/numkong) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/numkong.svg)](https://anaconda.org/conda-forge/numkong) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/numkong.svg)](https://anaconda.org/conda-forge/numkong) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/numkong.svg)](https://anaconda.org/conda-forge/numkong) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-simsimd-green.svg)](https://anaconda.org/conda-forge/simsimd) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/simsimd.svg)](https://anaconda.org/conda-forge/simsimd) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/simsimd.svg)](https://anaconda.org/conda-forge/simsimd) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/simsimd.svg)](https://anaconda.org/conda-forge/simsimd) |
 
-Installing simsimd
-==================
+Installing numkong-with-alias
+=============================
 
-Installing `simsimd` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `numkong-with-alias` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `simsimd` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `numkong, simsimd` can be installed with `conda`:
 
 ```
-conda install simsimd
-```
-
-or with `mamba`:
-
-```
-mamba install simsimd
-```
-
-It is possible to list all of the versions of `simsimd` available on your platform with `conda`:
-
-```
-conda search simsimd --channel conda-forge
+conda install numkong simsimd
 ```
 
 or with `mamba`:
 
 ```
-mamba search simsimd --channel conda-forge
+mamba install numkong simsimd
+```
+
+It is possible to list all of the versions of `numkong` available on your platform with `conda`:
+
+```
+conda search numkong --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search numkong --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search simsimd --channel conda-forge
+mamba repoquery search numkong --channel conda-forge
 
-# List packages depending on `simsimd`:
-mamba repoquery whoneeds simsimd --channel conda-forge
+# List packages depending on `numkong`:
+mamba repoquery whoneeds numkong --channel conda-forge
 
-# List dependencies of `simsimd`:
-mamba repoquery depends simsimd --channel conda-forge
+# List dependencies of `numkong`:
+mamba repoquery depends numkong --channel conda-forge
 ```
 
 
@@ -215,12 +195,12 @@ it is possible to build and upload installable packages to the
 [conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
-To manage the continuous integration and simplify feedstock maintenance
+To manage the continuous integration and simplify feedstock maintenance,
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
-For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
+For more information, please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -235,19 +215,19 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating simsimd-feedstock
-==========================
+Updating numkong-with-alias-feedstock
+=====================================
 
-If you would like to improve the simsimd recipe or build a new
+If you would like to improve the numkong-with-alias recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/simsimd-feedstock are
+Note that all branches in the conda-forge/numkong-with-alias-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
