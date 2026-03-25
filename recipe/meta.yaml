@@ -42,13 +42,11 @@ outputs:
         - pip check
 
   - name: simsimd
-    build:
-      noarch: python
     requirements:
       host:
-        - python {{ python_min }}
+        - python
       run:
-        - python >={{ python_min }}
+        - python
         - {{ pin_subpackage(name, exact=True) }}
     test:
       requires:
