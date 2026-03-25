@@ -1,5 +1,5 @@
 {% set name = "numkong" %}
-{% set version = "7.0.0" %}
+{% set version = "7.1.1" %}
 
 package:
   name: numkong-with-alias
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ashvardanian/NumKong/archive/v{{ version }}.tar.gz
-  sha256: 275f45f38cdf084da04170a47931430e0d9eb4f33151672a0860ad0ee55cb15c
+  sha256: 3a2adbc721581f2b434b8c66d68b4b0dfbed8660cd744349014f3bbd2e9c82f5
 
 build:
   number: 0
@@ -32,7 +32,7 @@ outputs:
       run:
         - python
         - _openmp_mutex
-        
+
     test:
       requires:
         - pip
@@ -52,7 +52,7 @@ outputs:
       requires:
         - python
       imports:
-        - numkong  
+        - numkong
 
 about:
   home: https://github.com/ashvardanian/NumKong
