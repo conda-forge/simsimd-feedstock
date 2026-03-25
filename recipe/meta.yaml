@@ -10,12 +10,11 @@ source:
   sha256: 74750ba40239ea946b8da25969585daf7816bcd70b31ae8a97c0357aa440805d
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: numkong
     build:
-      noarch: python
       script: python -m pip install . -vv --no-deps --no-build-isolation
     requirements:
       build:
@@ -32,6 +31,7 @@ outputs:
         - libgomp                        # [linux]
       run:
         - python
+        - _openmp_mutex
         
     test:
       requires:
