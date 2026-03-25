@@ -1,2 +1,5 @@
 c_stdlib_version:          # [linux]
   - "2.28"                 # [linux]
+
+MACOSX_SDK_VERSION:        # [arm64]
+  - "14.0"                 # [arm64]
