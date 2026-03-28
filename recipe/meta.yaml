@@ -10,7 +10,7 @@ source:
   sha256: a337fc6f6bb6c2ec257cf7c7cf41d0c2c8d072a1501261befabd28710995e3a0
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: numkong
@@ -18,6 +18,8 @@ outputs:
       script: python -m pip install . -vv --no-deps --no-build-isolation
     requirements:
       build:
+        - python                                 # [build_platform != target_platform]
+        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - {{ compiler('c') }}
         - {{ stdlib("c") }}
         - llvm-openmp                    # [osx]
