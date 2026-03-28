@@ -1,6 +1,6 @@
 {% set name = "numkong" %}
 {% set version = "7.2.2" %}
-
+cancel
 package:
   name: numkong-with-alias
   version: {{ version }}
