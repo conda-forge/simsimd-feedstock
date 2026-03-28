@@ -1,2 +1,9 @@
 c_stdlib_version:          # [linux]
   - "2.28"                 # [linux]
+# Temporary workaround: LLVM 19 crashes (segfault in AArch64 instruction selector)
+# when compiling SME streaming functions for arm64 cross-compilation targets.
+# Remove these overrides once the global conda-forge pin advances to LLVM 20+.
+c_compiler_version:        # [arm64]
+  - "20"                   # [arm64]
+llvm_openmp:               # [arm64]
+  - "20"                   # [arm64]
