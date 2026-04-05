@@ -1,5 +1,5 @@
 {% set name = "numkong" %}
-{% set version = "7.4.1" %}
+{% set version = "7.4.2" %}
 
 package:
   name: numkong-with-alias
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ashvardanian/NumKong/archive/v{{ version }}.tar.gz
-  sha256: b32c007d737b66967e3156ac9cd5ed7d9876a865da976b9803dd411ed63c4d4d
+  sha256: bbf077b5cd498f9797c0d86918cd81279d92e8430b9b43c654e1def0d3fbf6b4
 
 build:
   number: 0
